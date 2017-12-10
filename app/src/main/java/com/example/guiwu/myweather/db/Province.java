@@ -1,5 +1,7 @@
 package com.example.guiwu.myweather.db;
 
+import com.google.gson.annotations.SerializedName;
+
 import org.litepal.crud.DataSupport;
 
 /**
@@ -7,8 +9,14 @@ import org.litepal.crud.DataSupport;
  */
 
 public class Province extends DataSupport {
+
+    @SerializedName("dbId")
     private int id;
+
+    @SerializedName("name")
     private String provienceName;
+
+    @SerializedName("id")
     private int provienceNum;
 
     public int getId() {
